@@ -5,7 +5,7 @@ RUN groupadd -r uwsgi && useradd -r -g uwsgi uwsgi
 RUN pip install Flask==0.10.1 uWSGI requests redis
 
 WORKDIR /app
-COPY cache-app /app
+COPY test-app /app
 COPY cmd.sh /
 
 EXPOSE 9090 9191
