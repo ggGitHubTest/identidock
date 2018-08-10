@@ -1,6 +1,8 @@
+version: '3'
 identidock:
-  build: .
-    dockerfile: Dockerfile.7
+  build:
+   context: .
+   dockerfile: Dockerfile.7
   ports:
    - "5000:5000"
   environment:
